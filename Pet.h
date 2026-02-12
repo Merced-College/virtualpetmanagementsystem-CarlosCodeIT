@@ -30,9 +30,13 @@ public:
 
     // CompareTo
     int compareTo(const Pet& other) const; // Returns -1, 0, or 1 based on name comparison
+    
+    virtual void makeSound() const;
 
     // Output Function
-    void printInfo() const;
+    virtual void printInfo() const;
+
+    virtual ~Pet();
 };
 
 #endif
